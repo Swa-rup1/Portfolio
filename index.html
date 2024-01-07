@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link-CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- StyleSheet-CSS -->
+
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!-- NavBar-Component -->
+    <nav class="navbar navbar-expand-lg mx-2">
+      <div class="container-fluid">
+        <div class="col-md-5 nav-space">
+          <a class="navbar-brand logo" href="#">
+            <div class="nav-logo"></div>
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul class="navbar-nav nav-links nav-ul">
+              <li class="nav-item nav-li">
+                <a class="nav-link nav-a" href="#Home"> HOME</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link nav-a" href="#About"> ABOUT </a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link nav-a" href="#Skill"> SKILLS</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link nav-a" href="#Projects"> PROJECTS </a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link nav-a" href="#Contact"> CONTACT </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Component -->
+    <section class="Home">
+      <div class="left">
+        <h5>Web <span style="color: brown">Developer</span></h5>
+
+        <p>
+          Hello, I'm
+          <span style="font-style: italic; font-weight: bolder">Swarup</span>, a
+          web developer from Nepal.
+        </p>
+
+        <p>I create responsive and user-friendly websites.</p>
+        <button id="hire"><a href="#Projects" id="p">View Projects</a></button>
+      </div>
+
+      <div class="right">
+        <div class="blob">
+          <div class="box"></div>
+        </div>
+      </div>
+    </section>
+
+    <hr
+      style="height: 2px; border-width: 0; color: gray; background-color: gray"
+    />
+
+    <!-- About section -->
+    <section id="Skill">
+      <div class="skills">
+        <!-- create a div -->
+        <h1>My Skills</h1>
+        <!-- heading -->
+        <li>
+          <h3>HTML</h3>
+          <span class="bar"><span class="html"></span></span>
+          <!-- skill bar 1 -->
+        </li>
+
+        <li>
+          <h3>CSS</h3>
+          <span class="bar"><span class="css"></span></span
+          ><!-- skill bar 2 -->
+        </li>
+
+        <li>
+          <h3>JAVASCRIPT</h3>
+          <span class="bar"><span class="javascript"></span></span>
+        </li>
+
+        <li>
+          <h3>React</h3>
+          <span class="bar"><span class="react"></span></span>
+        </li>
+      </div>
+    </section>
+    <hr
+      style="height: 2px; border-width: 0; color: gray; background-color: gray"
+    />
+
+    <!-- Projects section -->
+    <section id="Projects">
+      <div class="pro-card">
+        <h2 id="p-h">Projects</h2>
+
+        <div class="container swiper">
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="img/FOODIEOPIA.png" alt="" />
+                </div>
+                <div class="project-details">
+                  <div class="Pr-name">
+                    <h3 class="name">Foodieopia</h3>
+
+                    <p class="name">HTML, CSS, JS, Django</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="img/cranfruit.png" alt="" />
+                </div>
+                <div class="Pr-name">
+                  <h3 class="name">Landing-Page</h3>
+
+                  <p class="name">React, Bootstrap</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="img/calcuu.png" alt="" />
+                </div>
+                <div class="Pr-name">
+                  <h3 class="name">Calculator</h3>
+
+                  <p class="name">React & Bootstrap</p>
+                  <p class="name">Simple Calculator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <hr
+      style="height: 2px; border-width: 0; color: gray; background-color: gray"
+    />
+
+    <!-- Contact section -->
+    <section id="Contact">
+      <div class="form">
+        <div class="title">Contact us</div>
+        <input type="text" placeholder="Your email" class="input" />
+        <textarea placeholder="Your message"></textarea>
+        <button>Submit</button>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

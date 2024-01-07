@@ -1,0 +1,63 @@
+/* Styles for the wrapper */
+#Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the form */
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+
+  padding: 0 20px 20px 20px;
+
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+/* Styles for the button */
+.form button {
+  margin-top: 10px;
+  align-self: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}

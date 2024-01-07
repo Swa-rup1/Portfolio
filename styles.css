@@ -1,0 +1,145 @@
+/* Navigation Bar Css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: poppins;
+}
+.navbar {
+  font-weight: 300;
+
+  flex-wrap: wrap;
+
+  display: flex;
+  /* align-items:center; */
+  justify-content: space-between;
+  min-height: 3rem;
+
+  padding-top: 0;
+  margin-top: 1rem !important;
+  margin: 1px;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.nav-space {
+  margin-top: 0.1rem;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+ul li.nav-li {
+  list-style: none;
+}
+
+ul li.nav-li a.nav-a {
+  text-decoration: none;
+  color: #a52a2a;
+  font-weight: bold;
+  padding: 0;
+}
+
+ul li.nav-li a.nav-a:hover {
+  color: rgb(117, 113, 112);
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-logo {
+  width: 15rem;
+  height: 2.7rem;
+  background-image: url("img/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-fluid {
+  transition: padding-top 0.3s;
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-expand-lg .navbar-collapse.show {
+  margin-bottom: 1rem;
+}
+.navbar-toggler[aria-expanded="true"] + .navbar-collapse {
+  display: block;
+}
+
+.navbar-toggler[aria-expanded="true"] + .navbar-collapse + * {
+  padding-top: 3.5rem;
+}
+
+.navbar-expand-lg .navbar-collapse.show + * {
+  padding-top: 3.5rem;
+}
+
+/*  Intro CSS */
+
+/* Home CSS */
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+
+.Home .left {
+  padding: 2rem;
+}
+
+button#hire {
+  border-radius: 6px;
+  background-color: black;
+  border-color: transparent;
+}
+
+#p {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+button#hire:hover {
+  background-color: rgb(58, 57, 57);
+}
+
+.blob {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
